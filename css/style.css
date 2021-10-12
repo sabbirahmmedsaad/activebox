@@ -1,0 +1,595 @@
+:root{
+    --mainfont :'Raleway', sans-serif;
+    --subfont : 'Open Sans', sans-serif;
+    --portfont : 'Cardo', serif;
+    --brandcolor : #e84545;
+    --brandoverlay : rgba(232, 69, 69, 0.9);
+    --banneroverlay : rgba(43, 46, 74, 0.95);
+    --headcolor : #2d3033;
+    --pcolor : #6c7279;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ======================
+    common css end
+=======================*/
+
+
+.ral-bold-13{
+    font-family: var(--mainfont);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.ral-semibold-13{
+    font-family: var(--mainfont);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ral-bold-14{
+    font-family: var(--mainfont);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ral-reg-22{
+    font-family: var(--mainfont);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.ral-reg-14{
+    font-family: var(--mainfont);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.ral-reg-13{
+    font-family: var(--mainfont);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.ral-light-28{
+    font-family: var(--mainfont);
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.open-bold-65{
+    font-family: var(--subfont);
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.cardo-italic-36{
+    font-family: var(--portfont);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.text-upper{
+    text-transform: uppercase;
+}
+
+.text-capt{
+    text-transform: capitalize;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color: #ffffff;
+}
+
+.cta-btn{
+    font-family: var(--mainfont);
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--brandcolor);
+    display: inline-block;
+    line-height: 46px;
+    border-radius: 5px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.pos-rel{
+    position: relative;
+}
+
+.pos-abs{
+    position: absolute;
+}
+
+.top-0{
+    top: 0;
+}
+
+.left-0{
+    left: 0;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+/* ======================
+    typrography css end
+======================= */
+
+
+nav{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav .nav-bar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-bar .logo{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-bar .logo a img{
+    width: 100%;
+}
+
+nav .nav-bar .nav-list{
+    height: 100px;
+    width: 600px;
+}
+
+nav .nav-bar .nav-list ul{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-bar .nav-list ul li a{
+    color: rgba(255, 255, 255, 0.75);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+nav .nav-bar .nav-list ul li a:hover{
+    color: var(--brandcolor);
+}
+
+.cta-btn:hover{
+    background: #ffffff;
+    color: var(--brandcolor);
+}
+
+/* ======================
+    nav-bar css end
+======================= */
+
+
+#banner{
+    height: 750px;
+    background: url(../images/banner-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--banneroverlay);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#banner .banner{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner .banner h1{
+    line-height: 71px;
+	padding: 0 45px;
+}
+
+#banner .banner p{
+    padding: 0 109px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+#banner .banner .cta-btn{
+    padding: 0 55px;
+}
+
+/* ======================
+    banner css end
+======================= */
+
+
+#service{
+    height: 450px;
+    padding: 120px 0px;
+}
+
+#service .service{
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#service .service .service-item{
+    width: 370px;
+    height: 190px;
+}
+
+#service .service .service-item h4{
+    color: var(--headcolor);
+    margin: 25px 0px;
+}
+
+#service .service .service-item p {
+	color: var(--pcolor);
+	padding: 0px 22px;
+	line-height: 21px;
+}
+
+/* ======================
+    service css end
+======================= */
+
+
+#gallery{
+    background: steelblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery .gallery-item{
+    width: 25%;
+}
+
+#gallery .gallery-item .overlay{
+    background: var(--brandoverlay);
+    opacity: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery .gallery-item:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#gallery .gallery-item .overlay h6{
+    margin-bottom: 10px;
+}
+
+
+/* ======================
+    gallery css end
+======================= */
+
+
+#team{
+    height: 580px;
+    padding: 100px 0px;
+}
+
+#team .team{
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#team .team .team-item{
+    height: 580px;
+    width: 270px;
+}
+
+#team .team .team-item h4 {
+	color: var(--headcolor);
+	padding-top: 24px;
+	margin-bottom: 12px;
+}
+
+#team .team .team-item h6 {
+	color: var(--brandcolor);
+	margin-bottom: 20px;
+}
+ 
+#team .team .team-item p {
+	color: var(--pcolor);
+	margin-bottom: 24px;
+	line-height: 21px;
+}
+
+ #team .team .team-item a i{
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #e8ecee;
+    box-sizing: border-box;
+    color: #c6cacc;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+#team .team .team-item a i:hover{
+    background: var(--brandcolor);
+    color: #fff;
+}
+
+/* ======================
+    team css end
+======================= */
+
+
+#feedback{
+    height: 500px;
+    background: #53354a;
+    position: relative;
+    z-index: 1;
+}
+
+#feedback::after{
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: url(../images/feedback.jpg) no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#feedback .feedback{
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#feedback .feedback .feedback-text{
+    width: 501px;
+    height: 500px;
+    padding-top: 120px;
+    box-sizing: border-box;
+}
+
+#feedback .feedback .feedback-text q{
+    line-height: 42px;
+}
+
+#feedback .feedback .feedback-text p{
+    margin-top: 25px;
+}
+
+#feedback .feedback .feedback-text .doted{
+    display: flex;
+    justify-content: center;
+}
+
+#feedback .feedback .feedback-text .doted li {
+	width: 13px;
+	height: 13px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	margin-left: 5px;
+	margin-top: 62px;
+}
+
+#feedback .feedback .feedback-text .doted .active{
+    background: #ffffff;
+}
+
+/* ======================
+    feedback css end
+======================= */
+
+
+#download{
+    height: 340px;
+}
+
+#download .download{
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#download .download h4{
+   color: var(--headcolor);
+}
+
+#download .download h5 {
+	color: var(--headcolor);
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+
+ #download .download a {
+	padding: 0px 85px;
+}
+
+#download .download a:hover{
+    background: var(--brandcolor);
+    color: #ffffff;
+}
+
+/* ======================
+    download css end
+======================= */
+
+
+#footer{
+    height: 345px;
+    background: #3a3e64;
+}
+
+#footer .footer-contact{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer-contact .footer-item {
+	height: 250px;
+	width: 370px;
+	text-align: center;
+	padding-top: 80px;
+	box-sizing: border-box;
+}
+
+#footer .footer-contact .footer-item p {
+	color: rgba(255, 255, 255, 0.5);
+	margin-top: 17px;
+	line-height: 22.5px;
+}
+
+#footer .footer-contact .footer-item p span{
+    display: block;
+}
+
+#footer .footer-contact .footer-item .icon a i{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e8ecee;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    margin-top: 17px;
+}
+
+#footer .footer-copyright{
+    height: 95px;
+	background: #313454;
+}
+
+#footer .footer-copyright .copyright-part {
+	height: 95px;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+#footer .footer-copyright .copyright-part p{
+    color: var(--pcolor);
+}
+
+#footer .footer-copyright .copyright-part p .span1 {
+	display: block;
+	line-height: 25px;
+}
+
+#footer .footer-copyright .copyright-part p .span1 i {
+	color: var(--brandcolor);
+}
+
+#footer .footer-copyright .copyright-part p .span1 .span2{
+    color: #ffffff;
+}
+
+/* ======================
+    footer css end
+======================= */
+
+
+
+
+
+
+
+
